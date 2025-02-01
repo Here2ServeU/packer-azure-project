@@ -1,0 +1,25 @@
+{
+  "builders": [
+    {
+      "type": "azure-arm",
+      "client_id": "<client_id>",
+      "client_secret": "<client_secret>",
+      "tenant_id": "<tenant_id>",
+      "subscription_id": "<subscription_id>",
+      "managed_image_resource_group_name": "t2s-image-group",
+      "managed_image_name": "t2s-custom-image",
+      "os_type": "Linux",
+      "image_publisher": "Canonical",
+      "image_offer": "UbuntuServer",
+      "image_sku": "20_04-lts",
+      "location": "East US",
+      "vm_size": "Standard_B1s"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "provisioner.sh"
+    }
+  ]
+}

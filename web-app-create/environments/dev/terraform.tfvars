@@ -1,0 +1,5 @@
+resource_group_name = "t2s-deployment-rg"
+azure_region        = "East US"
+vm_size             = "Standard_B1s"
+admin_username      = "azureuser"
+source_image_id     = "/subscriptions/your-subscription-id/resourceGroups/t2s-image-group/providers/Microsoft.Compute/images/t2s-custom-image"
